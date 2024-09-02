@@ -20,10 +20,11 @@
   "scripts": {
     "build": "node-gyp build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "prebuild-install || node-gyp rebuild",
+    "install": "node-gyp rebuild",
     "prebuild": "prebuild --all --strip --verbose"
   },
   "dependencies": {
+    "node-gyp": "^10.2.0",
     "bindings": "^1.3.0",
     "nan": "^2.15.0",
     "prebuild-install": "^2.5.1"
